@@ -210,7 +210,7 @@
           </div>
           <div class="col-md-8 col-sm-8 col-xs-8 column">
             <p>
-              The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
+              A ROS2 project for a hexapod robot uses a LiDAR to map and navigate the environment, and an AprilTag to follow. For control, a joystick is used to control the robot's movement and actions. This project enables the robot to autonomously navigate and perform tasks, such as automatic charging.
             </p>
           </div>
           <div class="col-md-2 col-sm-2 col-xs-2 column">
@@ -237,7 +237,25 @@
         <div class="col-md-8 col-sm-8 col-xs-8 column ">
           <h4><strong>Motivation</strong></h4>
           <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
+            This is my UROP(Undergrade Reasearch Opportunity Program) project at City Science Lab @ Taipei Tech / a coorperation with MIT Media Lab.
+          </p>
+          <p>
+            I really like any kind of robots, but it is my first time to have the project with legged robot and integrate ROS2 on this hexapod robot. I want to know the fundamental 
+            for the SLAM and Navigation ,therefore, I join the CSL UROP project.
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 column">
+        </div>
+      </div>
+
+      <div class="row p-2">
+        <div class="col-md-2 col-sm-2 col-xs-2 column">
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-8 column ">
+          <h4><strong>ROS2 & Joystick Control</strong></h4>
+          <p>
+            First, I used python to control this robot and made it can move e.g. linear and angular move control and stnace control. 
+            Then I create a node for subscribe the cmd_vel and joy, so that I can get the joy data and twist msg through ROS2 DDS to control this robot.
           </p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
@@ -262,9 +280,9 @@
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
         <div class="col-md-8 col-sm-8 col-xs-8 column ">
-          <h4><strong>ROS2 & Joystick Control</strong></h4>
+          <h4><strong>Mechnical Design & 3D Printer</strong></h4>
           <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
+            Then I had to add a Lidar to do the SLAM thing, so I used the 3D printer the print a LiDAR base.
           </p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
@@ -285,9 +303,14 @@
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
         <div class="col-md-8 col-sm-8 col-xs-8 column ">
-          <h4><strong>Mechnical Design & 3D Printer</strong></h4>
+          <h4><strong>SLAM</strong></h4>
           <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
+            I face some problem when I search how to do the SLAM because most of the algorithms for SLAM need IMU or Camera to fusion the odometry to make the map better.
+            So I learn how to revise the parameter to choose whehter I need the IMU or Camera.
+          </p>
+          <p>
+            I try a lot of algorithms ex: Lio-SAM, Gmapping, Cartographer. I choose the Cartographer to be my result, because I don't have odometry. So Cartographer is the better choose.
+            I used the joystick to control the hexapod robot moving around my Lab and using Cartographer to SLAM building the map for my Lab.
           </p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
@@ -311,12 +334,14 @@
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
         <div class="col-md-8 col-sm-8 col-xs-8 column ">
-          <h4><strong>SLAM</strong></h4>
+          <h4><strong>Navigation</strong></h4>
           <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
+            Then I try to do the navigation, if I wanted to use ROS2 support navigation package(Navigation2), I need to create the tf tree. The map to odom I used 
+            the AMCL, and I use laser_scan_matcher this algorithm to use Lidar calculate the odometry of the robot. And then I used a static_transform_publisher
+            to define the relation between base_link and laser.
+          </p>
+          <p>
+            Fortunately, I could launch the Nav2 package and made this robot go to any destination in the map.
           </p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
@@ -333,21 +358,37 @@
         </div>
       </div>
 
+      <div class="row clearfix p-2">
+        <div class="col-md-3 col-sm-4 col-xs-4 column">
+        </div>
+        <!-- 圖AMCL錯了 -->
+        <div class="col-md-6 col-sm-4 col-xs-4 column">
+          <img src="img\tf_tree.png" class="img-responsive w-100" alt="Cinque Terre"/>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-4 column">
+        </div>
+      </div>
+
       <div class="row p-2">
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
         <div class="col-md-8 col-sm-8 col-xs-8 column ">
-          <h4><strong>Navigation</strong></h4>
+          <h4><strong>AprilTag Control</strong></h4>
           <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
+            Then, I try to think how should I do after navigation, my director recommand me can try AprilTag things. So I try to let the robot can localize through 
+            AprilTag, and conbine the control command to make the robot move to a fixed distance relative to AprilTag. So I can move the AprilTag and the robot can 
+            following the AprilTag.
+
           </p>
+          <p>
+            AprilTag Developed at the University of Michigan, AprilTag is like a 2D barcode or a simplified QR Code. It contains a numeric ID code and can be used for location and orientation.
+          </p>
+
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
       </div>
+
 
       <div class="row p-2">
         <div class="col-md-2 col-sm-2 col-xs-2 column">
@@ -366,12 +407,35 @@
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
         <div class="col-md-8 col-sm-8 col-xs-8 column ">
-          <h4><strong>AprilTag Control</strong></h4>
+          <h4><strong>Final</strong></h4>
           <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
+            Finally, I conbine the every function I create above. And use twist_mux node to manage any kind of cmd_vel topic, give each one a priority. 
+            Fisrt is the joystick, I need to make sure I can control the robot any time I wnat. Second is the AprilTag. Third is the Navigation. 
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 column">
+        </div>
+      </div>
+
+
+      <div class="row clearfix p-2">
+        <div class="col-md-3 col-sm-3 col-xs-3 column">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 column">
+          <img src="img\final_flow.png" class="img-responsive w-100" alt="Cinque Terre"/>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 column">
+        </div>
+      </div>
+
+      <div class="row p-2">
+        <div class="col-md-2 col-sm-2 col-xs-2 column">
+        </div>
+        <div class="col-md-8 col-sm-8 col-xs-8 column ">
+          <h4><strong>Final</strong></h4>
+          <p>
+            So I can control the robot through joystick fisrt, and then change to the navigation mode its LED light would change to blue when it is navgating. 
+            Then it will change back to green when it is in the destination. Then the robot will change to AprilTag mode the search the AprilTag and then following the Tag.
           </p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
@@ -382,45 +446,19 @@
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
-          <img src="img\final_1.png" class="img-responsive w-100" height="250" alt="Cinque Terre"/>
+          <img src="img\final_1.jpg" class="img-responsive w-100"  alt="Cinque Terre"/>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-1 column">
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
-          <img src="img\final_2.png" class="img-responsive w-100" height="250" alt="Cinque Terre"/>
+          <img src="img\final_2.jpg" class="img-responsive w-100"  alt="Cinque Terre"/>
         </div>
         <div class="col-md-1 col-sm-1 col-xs-1 column">
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
-          <img src="img\final_3.png" class="img-responsive w-100" height="250" alt="Cinque Terre"/>
+          <img src="img\final_3.jpg" class="img-responsive w-100"  alt="Cinque Terre"/>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
-        </div>
-      </div>
-
-      <div class="row p-2">
-        <div class="col-md-2 col-sm-2 col-xs-2 column">
-        </div>
-        <div class="col-md-8 col-sm-8 col-xs-8 column ">
-          <h4><strong>Final</strong></h4>
-          <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-          </p>
-        </div>
-        <div class="col-md-2 col-sm-2 col-xs-2 column">
-        </div>
-      </div>
-
-      <div class="row clearfix p-2">
-        <div class="col-md-3 col-sm-3 col-xs-3 column">
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6 column ">
-          <iframe width="700" height="400" src="https://www.youtube.com/embed/yUQXPHF1PP0?si=mKGFnz8huByWlgJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-3 column">
         </div>
       </div>
 
@@ -429,16 +467,22 @@
         </div>
         <div class="col-md-8 col-sm-8 col-xs-8 column ">
           <h4><strong>Final Project Video</strong></h4>
-          <p>
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-            The IEEE Micro-Mouse competition is a world wide event in which college teams create a robot that can navigate a maze as quickly as possible. In 2014, Tristan Paine, Kevin Jung and myself entered with our MicroMau5 robot.
-          </p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2 column">
         </div>
       </div>
+
+      <div class="row p-2">
+        <div class="col-md-3 col-sm-3 col-xs-3 column">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 column ">
+          <iframe width="700" height="400" src="https://www.youtube.com/embed/V_spW_6svvg?si=hhJh3jpCkiOVblzl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3 column">
+        </div>
+      </div>
+
+
 
       
     </div>
