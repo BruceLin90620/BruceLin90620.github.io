@@ -27,7 +27,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Jung Peng "Bruce" Lin
-  image             : /assets/img/profilepic.jpg 
+  image             : https://i.postimg.cc/dtMJ3NcG/profilepic.jpg
   # behance           : your_username
 # dribbble          : your_username
   email             : brucelin90620@gmail.com
