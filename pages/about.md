@@ -13,6 +13,25 @@ I graduated from the Department of Mechanical Engineering at National Taipei Uni
 
 ---
 
+## Education
+<div class="row">
+  <div class="col mt-4">
+    <div class="timeline-body bg-themed">
+      {% for item in site.data.timeline.education %}
+        <div class="timeline-item">
+          <div class="content">
+            <h2>{{ item.title }}</h2>
+            <h6 class="date">{{ item.location }} • {{ item.from }} — {{ item.to }}</h6>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<br>
+
 ## Experience
 <div class="row">
   <div class="col mt-4">
@@ -38,25 +57,6 @@ I graduated from the Department of Mechanical Engineering at National Taipei Uni
                 {% endif %}
               </div>
             {% endfor %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-
-<br>
-
-## Education
-<div class="row">
-  <div class="col mt-4">
-    <div class="timeline-body bg-themed">
-      {% for item in site.data.timeline.education %}
-        <div class="timeline-item">
-          <div class="content">
-            <h2>{{ item.title }}</h2>
-            <h6 class="date">{{ item.location }} • {{ item.from }} — {{ item.to }}</h6>
-            <p>{{ item.description }}</p>
           </div>
         </div>
       {% endfor %}
