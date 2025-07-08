@@ -1,13 +1,12 @@
 ### Site Settings ###
 title               : Jung-Peng Lin (Bruce)
 description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
+                      Master of Science in Electrical and Computer Engineering, Purdue University.<br>
+                      Research interests are Embedded System and Robotics.
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : BruceLin90620/BruceLin90620.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
-open_new_tab        : false                    # Opens external URLs in new tab (works for posts, projects and navbar only)
+open_new_tab        : true                    # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
 ### Plugins ###
