@@ -12,7 +12,7 @@ This project integrates biomimetics, software architecture, and control systems 
 </p>
 
 <div class="video my-4">
-  <iframe src="https://www.youtube.com/embed/qN7IXwsKODI?si=t2n0xto09ZLPDRxR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/qN7IXwsKODI?si=t2n0xto09ZLPDRxR" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---

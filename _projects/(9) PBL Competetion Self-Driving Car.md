@@ -12,7 +12,7 @@ A collaborative project between Osaka Institute of Technology, New Taipei Munici
 </p>
 
 <div class="video my-4">
-  <iframe src="https://www.youtube.com/embed/FNIiC8IVrEo?si=8LEZFYAaZcEKnRsM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/FNIiC8IVrEo?si=8LEZFYAaZcEKnRsM" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---

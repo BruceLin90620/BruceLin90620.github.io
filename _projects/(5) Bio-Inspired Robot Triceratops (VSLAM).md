@@ -12,7 +12,7 @@ To enable autonomous and safe indoor mobility for the robot, we enhanced its env
 </p>
 
 <div class="video my-4">
-  <iframe src="https://www.youtube.com/embed/dL-FF7bwwxU?si=c8tTuZ_QIrHJG_Ez" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/dL-FF7bwwxU?si=c8tTuZ_QIrHJG_Ez" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---
@@ -45,13 +45,13 @@ The Triceratops robot also integrates ROS 2's Nav2 navigation framework, utilizi
   <div class="col-md-6">
     <h5 class="text-center">Triceratops Moving Video</h5>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/M36GWAr3caM?si=r3bjtizAE_vnXU75&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/M36GWAr3caM?si=r3bjtizAE_vnXU75&mute=1" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div class="col-md-6">
     <h5 class="text-center">Visual Navigation Demo Video</h5>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/IC6jLG2WF_c?si=9k66eLOwUuANwsE8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/IC6jLG2WF_c?si=9k66eLOwUuANwsE8" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </div>

@@ -77,13 +77,13 @@ Spot employs an onboard 3D LiDAR sensor to continuously scan its surroundings, g
   <div class="col-md-6">
     <h5 class="text-center">Outdoor Testing</h5>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/LI97OdDDBUY?si=qxKzRSyGzX2XXNTA&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/LI97OdDDBUY?si=qxKzRSyGzX2XXNTA&mute=1" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   <div class="col-md-6">
     <h5 class="text-center">Indoor Testing</h5>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/IM2RIEQZuBg?si=Bo6UEO0HiOZgwEAB" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/IM2RIEQZuBg?si=Bo6UEO0HiOZgwEAB" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </div>
@@ -107,5 +107,5 @@ Beyond physical navigation, Spot has been integrated into a digital twin environ
   </div>
 </div>
 <div class="video">
-  <iframe src="https://www.youtube.com/embed/frTH0QERYtQ?si=ro4zKaLa2XaklL_l" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/frTH0QERYtQ?si=ro4zKaLa2XaklL_l" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

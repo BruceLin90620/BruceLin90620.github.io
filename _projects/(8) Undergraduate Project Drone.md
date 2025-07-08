@@ -58,5 +58,5 @@ We successfully developed a quadcopter drone with advanced capabilities:
 ## Project Demonstration
 
 <div class="video my-4">
-  <iframe src="https://www.youtube.com/embed/SnAItE21r1Y?si=ugppkcLb9JNmK2lK" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/SnAItE21r1Y?si=ugppkcLb9JNmK2lK" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

@@ -44,5 +44,5 @@ As the laboratory robots are developed using ROS2 middleware, and both ROS2 and 
 ## Final Project Video
 
 <div class="video my-4">
-  <iframe src="https://www.youtube.com/embed/iEp8NJe1Z8A?si=giUsoE4eCEe8Wd-R&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/iEp8NJe1Z8A?si=giUsoE4eCEe8Wd-R&mute=1" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
