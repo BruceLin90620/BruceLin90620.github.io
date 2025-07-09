@@ -1,11 +1,15 @@
 - name: C/C++
   percentage: 90
-  color: secondary
+  color: info
 
 - name: Python
-  percentage: 80
+  percentage: 90
   color: warning
 
 - name: MATLAB
-  percentage: 85
+  percentage: 80
   color: primary
+
+- name: Shell Scripting (Bash)
+  percentage: 75
+  color: success

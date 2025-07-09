@@ -15,14 +15,26 @@ education:
 experience:
   - title: Researcher (Full-time), Robotics Team
     location: City Science Lab @ Taipei Tech (cooperation with MIT Media Lab)
-    from: Jul. 2023
-    to: Apr. 2025
-    projects:
-      - name: Boston Dynamics Spot (TSMC Industry-Academia Research Project)
-        star:
-          situation: "For TSMC's automated inspection needs, the robot required precise remote control in large factory environments where loading a complete map was computationally prohibitive."
-          task: "My task was to enable the Spot robot to navigate to designated locations for automated inspection, overcoming large-scale map limitations."
-          action:
-            - "Utilized Spot's SDK and 3D-LiDAR localization based on ROS2 to enable precise remote control."
-            - "Developed a map switching system and used AprilTags to provide the robot with a reliable initial position, resolving the issue of loading oversized maps."
-          result: "Successfully enabled the robot to perform automated inspection tasks in a large-scale industrial environment through precise remote navigation."
+    from: 07/2023
+    to: 04/2025
+    description: >
+      Promoted to full-time researcher after graduation to continue leading robotics projects.
+      <ul>
+        <li>TSMC Industry-Academia Research Project: Boston Dynamics Spot</li>
+        <li>Foxconn Technology Industry-Academia Research Project: EVπ (Autonomous Vehicle) </li>
+      </ul>
+
+  - title: Undergraduate Researcher
+    location: City Science Lab @ Taipei Tech (cooperation with MIT Media Lab)
+    from: 02/2023
+    to: 07/2023
+    description: >
+      <ul>
+        <li>Development of SLAM and Navigation System for Hexapod Robot</li>
+      </ul>
+
+  - title: Software Engineer Intern
+    location: Aeroprobing Inc., a drone solutions startup
+    from: 11/2022
+    to:  01/2022
+    description: >

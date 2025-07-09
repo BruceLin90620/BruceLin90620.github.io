@@ -6,7 +6,10 @@
   percentage: 80
   color: warning
 
-- name: SOLIDWORKS
-  percentage: 70
-  color: success
+- name: Embedded Linux
+  percentage: 75
+  color: primary
 
+- name:  Device Drivers
+  percentage: 75
+  color: info
