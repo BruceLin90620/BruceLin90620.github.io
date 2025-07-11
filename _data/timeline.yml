@@ -15,8 +15,8 @@ education:
 experience:
   - title: Researcher (Full-time), Robotics Team
     location: City Science Lab @ Taipei Tech (cooperation with MIT Media Lab)
-    from: 07/2023
-    to: 04/2025
+    from: Jul 2023
+    to: Mar 2025
     description: >
       Promoted to full-time researcher after graduation to continue leading robotics projects.
       <ul>
@@ -26,8 +26,8 @@ experience:
 
   - title: Undergraduate Researcher
     location: City Science Lab @ Taipei Tech (cooperation with MIT Media Lab)
-    from: 02/2023
-    to: 07/2023
+    from: Feb 2023
+    to: Jul 2023
     description: >
       <ul>
         <li>Development of SLAM and Navigation System for Hexapod Robot</li>
@@ -35,6 +35,6 @@ experience:
 
   - title: Software Engineer Intern
     location: Aeroprobing Inc., a drone solutions startup
-    from: 11/2022
-    to:  01/2022
+    from: Nov 2022
+    to:  Jan 2022
     description: >
